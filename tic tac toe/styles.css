@@ -1,0 +1,41 @@
+body
+{
+    min-height: 100%;
+    background:#0c0c0c;
+    display: grid;
+    place-content: center;
+}
+
+.container
+{
+    padding: 2.5rem;
+    width: 500px;
+    background:#161616;
+}
+
+.scoresheet
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoresheet > div
+{
+    display: flex;
+    gap: 1rem;
+    color: rgb(231, 230, 230);
+}   
+
+.tictactoe-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+    margin-top: 2rem;
+}
+
+.tictactoe-bx
+{
+    border: 1px solid rgb(231, 230, 230);
+    color: rgb(231, 230, 230);
+}

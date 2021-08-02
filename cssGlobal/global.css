@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, "Font Awesome 5 Free", "Font Awesome 5 Brands";
+}
+
+html,
+body
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    line-height: 1.1;
+    max-width: 75ch;
+}
+
+h1
+{
+    font-size: clamp(1.8rem,5vw,2rem);
+}
+
+h2
+{
+    font-size: clamp(1.6rem,5vw,1.8rem);
+}
+
+h3
+{
+    font-size: clamp(1.4rem,5vw,1.6rem);
+}
+
+p
+{
+    font-weight: lighter;
+    max-width: 75ch;
+    font-size: clamp(1rem,5vw,1.1rem);
+}
+
+a
+{
+    text-decoration: none;
+    font-size: clamp(1rem,5vw,1.1rem);
+}
+
+button
+{
+    cursor: pointer;
+    border: none;
+    font-size: clamp(1rem,5vw,1.1rem);
+}
+
+img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+input
+{
+    border: none;
+    font-size: clamp(1rem,5vw,1.1rem);
+}

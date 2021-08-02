@@ -1,0 +1,53 @@
+body
+{
+    min-height: 100%;
+    display: grid;
+    place-content: center;
+    background:#e5e5e5;
+}
+
+.container
+{
+    background: #dfdede;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    box-shadow: inset -1px -1px 15px rgba(255,255,255,0.1),
+    inset 1px 1px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.timer-bx
+{
+    display: flex;
+}
+
+.btn-bx
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-bx button
+{
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #fa1c1c;
+    color: #e5e5e5;
+    transition: all .2s ease-in;
+}
+
+.btn-bx button:hover,
+.btn-bx button:focus
+{
+    transform: scale(1.1);
+}
+
+
+

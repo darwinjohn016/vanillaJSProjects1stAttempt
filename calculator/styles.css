@@ -1,0 +1,108 @@
+body
+{
+    min-height: 100%;
+    display: grid;
+    place-content: center;
+    background:#e5e5e5;
+    position: relative;
+}
+
+img:nth-of-type(1)
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    width: 50%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+img:nth-of-type(2)
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%,-50%) scaleX(-1);
+    width: 50%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+
+.calculator
+{
+    position: relative;
+    z-index: 5;
+    padding: 2.5rem;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background:#dddcdc;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.1),
+    -1px -1px 15px rgba(255,255,255,0.1);
+    border-radius: 20px;
+}
+
+.input-bx
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.previous-operand
+{
+    padding: 0.3rem 1rem;
+    font-size: clamp(0.9rem,5vw,1rem);
+    text-align: right;
+    background:#cdcbcb;
+    outline: none;
+}
+
+.current-operand
+{
+    background:#cdcbcb;
+    padding: 0.6rem 1rem;
+    font-size: clamp(1.1rem,5vw,1.2rem);
+    text-align: right;
+    outline: none;
+}
+
+.btn-bx
+{
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+}
+
+.btn-bx button
+{
+    background:#dddcdc;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.05),
+    -1px -1px 10px rgba(255,255,255,0.1);
+}
+
+.btn-bx button:hover
+{
+    background: rgb(197, 196, 196);
+}
+
+
+.btn-bx button:nth-child(1)
+{
+    grid-column: 1/3;
+}
+
+@media(max-width: 425px)
+{
+    .calculator
+    {
+        padding: 1rem;
+    }
+    .btn-bx
+    {
+        grid-template-columns: repeat(4,68px);
+    }
+}
+
